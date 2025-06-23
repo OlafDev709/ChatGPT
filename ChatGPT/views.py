@@ -47,7 +47,8 @@ SECRET_KEY = config("SECRET_KEY")
 #     return render(request, 'index.html')
 
 
-
+# integrate API of ChatGPT with Django
+# import openai
 def query_view(request):
     if request.method == 'POST':
         client = OpenAI(api_key=SECRET_KEY)
